@@ -111,7 +111,7 @@ public static class SortReducer extends Reducer<IntWritable, Text, Text, NullWri
 
 运行结果如下
 
-<img src="/img/output1.png" alt="output1" style="zoom:50%;" />
+<img src="/img/output1.png" alt="output1" style="zoom:20%;" />
 
 
 
@@ -145,7 +145,7 @@ with open("LoanDistribution.txt", "w") as f:
 
 运行结果如下：
 
-<img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/output2.png" alt="output2" style="zoom:67%;" />
+<img src="/img/output2.png" alt="output2" style="zoom:67%;" />
 
 
 
@@ -170,7 +170,7 @@ df2 = df1.withColumn('count', df1['count']/num)
 
 计算结果如下：
 
-<img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/op31.png" alt="op31" style="zoom:50%;" />
+<img src="/img/op31.png" alt="op31" style="zoom:50%;" />
 
 #### 统计每个用户最终须缴纳的利息金额
 
@@ -185,7 +185,7 @@ output2 = df4.collect()
 
 计算结果如下：
 
-<img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/op32.png" alt="op32" style="zoom:50%;" />
+<img src="/img/op32.png" alt="op32" style="zoom:50%;" />
 
 #### 统计⼯作年限 work_year 超过 5 年的用户的房贷情况 censor_status 的数量分布占比情况
 
@@ -207,7 +207,7 @@ with open(r"CensorStatus.csv",
 
 计算结果如下：
 
-<img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/op33.png" alt="op33" style="zoom:50%;" />
+<img src="/img/op33.png" alt="op33" style="zoom:50%;" />
 
 ## Task4
 
@@ -457,7 +457,7 @@ auc:  0.8284648716818422
 
 1. 报错`py4j.protocol.Py4JError: org.apache.spark.api.python.PythonUtils.isEncryptionEnabled does not exist in the JVM`
 
-<img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/Error1.png" alt="Error1" style="zoom:50%;" />
+<img src="/img/Error1.png" alt="Error1" style="zoom:50%;" />
 
 解决方法：
 
@@ -472,11 +472,11 @@ findspark.init()
 
 2. 在程序执行的时候，总是找别的python路径。其实本人并没有安装conda。
 
-   <img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/Error2.png" alt="Error2" style="zoom:50%;" />
+   <img src=/img/Error2.png" alt="Error2" style="zoom:50%;" />
 
 经检查发现`echo $PYSPARK_PYTHON` 和 `/usr/local/spark/conf/spark-env.sh `里的`PYSPARK_PYTHON`路径不一样。
 
-<img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/Error3.png" alt="Error3" style="zoom:50%;" />
+<img src="/img/Error3.png" alt="Error3" style="zoom:50%;" />
 
 解决方案：
 
