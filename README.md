@@ -111,7 +111,7 @@ public static class SortReducer extends Reducer<IntWritable, Text, Text, NullWri
 
 运行结果如下
 
-<img src="/Users/anjdum/Documents/大学/金融大数据处理技术/作业/实验4/img/output1.png" alt="output1" style="zoom:50%;" />
+<img src="/img/output1.png" alt="output1" style="zoom:50%;" />
 
 
 
